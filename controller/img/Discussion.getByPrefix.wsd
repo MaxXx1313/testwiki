@@ -1,33 +1,23 @@
 @startuml
 
-skinparam activity {
-  backgroundColor<<external>> #AAFFFF
-  backgroundColor<<operation>> #EEE
-}
-
+start
 partition Discussion.getByPrefix {
 
-    (*) --> DB.userRW().getAllByPrefix <<external>>
-    --> (*)
+    fork
+        :DB.userRW().getAllByPrefix |
+    fork again
+        :DB.course().byPrefix |
+    fork again
 
-    (*) --> DB.course().byPrefix <<external>>
-    --> (*)
+        partition User.getCurrentUser {
+            :DB.user().get;
+            if (need online?) then (Y)
+                :DB.query().byId |
+            endif
+        }
 
-
-    partition User.getCurrentUser {
-
-        (*) --> ===S===
-
-        ===S=== --> DB.user().get
-        --> if "need online?" then
-            --> [Y] DB.query().byId
-            --> ===E===
-        else
-            --> ===E===
-        endif
-
-        ===E=== --> (*)
-    }
+    end fork
 }
+end
 
 @enduml
