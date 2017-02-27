@@ -1,0 +1,29 @@
+@startuml
+
+
+:GET Discussion searchClassDiscussions<
+
+partition Discussion.searchByClass {
+    fork
+      :Discussion.getByPrefix |
+    fork again
+      :Discussion.getDiscussionActivity |
+    end fork
+    :filter ]
+
+    if (length>0) then (Y)
+
+        partition User.getByIds {
+            :User.getCurrentUser;
+            if (get me only) then (No)
+                :DB.query().byIds |
+            endif;
+        }
+
+    endif;
+}
+stop
+
+@enduml
+
+

@@ -1,0 +1,33 @@
+@startuml
+
+skinparam activity {
+  backgroundColor<<external>> #AAFFFF
+  backgroundColor<<operation>> #EEE
+}
+
+partition Discussion.getByPrefix {
+
+    (*) --> DB.userRW().getAllByPrefix <<external>>
+    --> (*)
+
+    (*) --> DB.course().byPrefix <<external>>
+    --> (*)
+
+
+    partition User.getCurrentUser {
+
+        (*) --> ===S===
+
+        ===S=== --> DB.user().get
+        --> if "need online?" then
+            --> [Y] DB.query().byId
+            --> ===E===
+        else
+            --> ===E===
+        endif
+
+        ===E=== --> (*)
+    }
+}
+
+@enduml

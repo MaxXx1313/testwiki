@@ -1,0 +1,17 @@
+@startuml
+
+skinparam activity {
+  backgroundColor<<external>> #AAFFFF
+  backgroundColor<<operation>> #EEE
+}
+
+
+partition Discussion.getDiscussionActivity {
+
+  partition UserStudy.getPublicationSummary {
+      (*) --> UserStudyDao.prototype.get
+      --> (*)
+  }
+}
+
+@enduml
