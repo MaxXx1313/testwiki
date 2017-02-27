@@ -9,9 +9,16 @@ partition Discussion.searchByClass {
     fork again
       :Discussion.getDiscussionActivity |
     end fork
+
     :filter ]
+    note left: Filter discussions by class, inject messages
 
     if (length>0) then (Y)
+
+        note left
+         Get info about users (message authors)
+         and add firstName, lastName, photo to message
+        end note
 
         partition User.getByIds {
             :User.getCurrentUser;

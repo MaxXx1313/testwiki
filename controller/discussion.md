@@ -12,9 +12,6 @@ Get discussions by class and publication ID
   1. get activity for course  
   1. get discussion value  
 
-Filter discussions by class, inject messages
-Get info about users (message authors) and add firstName, lastName, photo to message
-
 
 ![searchClassDiscussions](img/Discussion_GET_searchClassDiscussions.png)
 ![Discussion.getByPrefix](img/Discussion.getByPrefix.png)
