@@ -1,5 +1,5 @@
 
-#zoom: 1.5
+#zoom: 1
 [Discussion.getDiscussionActivity|
         [<start>s]->[UserStudy.getPublicationSummary|
             [<start>s]->[UserStudyDao.prototype.get]

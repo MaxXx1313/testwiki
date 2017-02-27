@@ -1,5 +1,5 @@
 
-#zoom: 1.5
+#zoom: 1
 [Discussion.getByPrefix|
         [<start>s]
         [<end>e]
