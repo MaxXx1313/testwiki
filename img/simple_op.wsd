@@ -1,0 +1,6 @@
+@startuml
+
+: this is a basic operation.
+ it's synchronous, not a db request]
+
+@enduml
