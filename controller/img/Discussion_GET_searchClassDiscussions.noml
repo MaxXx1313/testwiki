@@ -1,0 +1,35 @@
+
+#zoom: 1.5
+#.ext: dashed
+#.external: dashed
+#.checkpoint: visual=start
+#.operation: visual=roundrect
+
+[Discussion.searchByClass|
+    [<start>s]->[<external>Discussion.getByPrefix]
+    [<start>s]->[<external>Discussion.getDiscussionActivity]
+    [<end>e]
+
+    [Discussion.getByPrefix]->[<operation>filter]
+    [Discussion.getDiscussionActivity]->[filter]
+
+    [filter]->[<choice>length>0]
+    [length>0]-> [e]
+    [length>0]-> yes [User.getByIds|
+        [<start>s]->[User.getCurrentUser]
+        [<end>e]
+        [User.getCurrentUser]->[<choice>get me only]
+        [get me only]->no [<ext>DB.query().byIds]
+        [DB.query().byIds]->[e]
+        [get me only]->[e]
+    ]
+
+    [User.getByIds] -> [<end>e]
+
+]
+
+[<receiver>GET Discussion searchClassDiscussions]->[<start>s]
+[<start>s]->[Discussion.searchByClass]
+[Discussion.searchByClass]-> [<end>e]
+
+

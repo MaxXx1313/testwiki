@@ -1,0 +1,9 @@
+
+#zoom: 1.5
+[Discussion.getDiscussionActivity|
+        [<start>s]->[UserStudy.getPublicationSummary|
+            [<start>s]->[UserStudyDao.prototype.get]
+            [UserStudyDao.prototype.get]->[<end>e]
+        ]
+        [UserStudy.getPublicationSummary]->[<end>e]
+    ]

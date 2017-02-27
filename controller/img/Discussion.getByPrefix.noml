@@ -1,0 +1,19 @@
+
+#zoom: 1.5
+[Discussion.getByPrefix|
+        [<start>s]
+        [<end>e]
+        [s]->[DB.userRW().getAllByPrefix]
+        [DB.userRW().getAllByPrefix]->[e]
+        [s]->[DB.course().byPrefix]
+        [DB.course().byPrefix]->[e]
+        [s]->[User.getCurrentUser|
+            [<start>s]->[DB.user().get]
+            [<end>e]
+            [DB.user().get]->[<choice>need online]
+            [need online]->yes[DB.query().byId]
+            [DB.query().byId]->[e]
+            [need online]->[e]
+        ]
+        [User.getCurrentUser]->[e]
+  ]
