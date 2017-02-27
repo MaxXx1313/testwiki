@@ -15,7 +15,7 @@ partition Discussion.searchByClass {
 
         partition User.getByIds {
             :User.getCurrentUser;
-            if (get me only) then (No)
+            if (get me only?) then (No)
                 :DB.query().byIds |
             endif;
         }
