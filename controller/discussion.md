@@ -74,6 +74,9 @@ Agent part:
 [byId/byIds/byPrefix](../dao/common/byIds.png) operations
 
 
-![Discussion.getByPrefix](discussion/Discussion.getByPrefix.png)
-![Discussion.getDiscussionActivity](discussion/Discussion.getDiscussionActivity.png)
-![Discussion.updateDiscussionActivity](discussion/Discussion.updateDiscussionActivity.png)
+![Discussion.getByPrefix](../dao/Discussion/Discussion.getByPrefix.png)
+![Discussion.getDiscussionActivity](../dao/Discussion/Discussion.getDiscussionActivity.png)
+![Discussion.updateDiscussionActivity](../dao/Discussion/Discussion.updateDiscussionActivity.png)
+
+
+![UserStudy.getPublicationSummary](../dao/UserStudy/UserStudy.getPublicationSummary.png)

@@ -1,0 +1,12 @@
+@startuml
+
+start
+partition UserStudy.getPublicationSummary {
+
+  partition UserStudy._getDoc {
+    :DB.userRW().get('activity');
+  }
+}
+end
+
+@enduml
