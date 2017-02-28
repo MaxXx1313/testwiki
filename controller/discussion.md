@@ -13,6 +13,9 @@ Get discussions by class and publication ID
   1. get discussion value  
 
 
-![searchClassDiscussions](img/Discussion_GET_searchClassDiscussions.png)
-![Discussion.getByPrefix](img/Discussion.getByPrefix.png)
-![Discussion.getDiscussionActivity](img/Discussion.getDiscussionActivity.png)
+See also: 
+[query operations schema](../dao/common/byIds.png) operations
+
+![searchClassDiscussions](discussion/Discussion_GET_searchClassDiscussions.png)
+![Discussion.getByPrefix](discussion/Discussion.getByPrefix.png)
+![Discussion.getDiscussionActivity](discussion/Discussion.getDiscussionActivity.png)

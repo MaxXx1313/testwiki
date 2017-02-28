@@ -4,7 +4,7 @@ start
 partition Discussion.getByPrefix {
 
     fork
-        :DB.userRW().getAllByPrefix |
+        :DB.userRW().getAllByPrefix;
     fork again
         :DB.course().byPrefix |
     fork again
