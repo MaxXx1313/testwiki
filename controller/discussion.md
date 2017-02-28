@@ -2,7 +2,7 @@
 
 
 ## Contents:
-[GET searchClassDiscussions](#GET searchClassDiscussions:  )
+[GET searchClassDiscussions](#GETsearchClassDiscussions)
 
 ### GET searchClassDiscussions:  
 Get discussions by class and publication ID
