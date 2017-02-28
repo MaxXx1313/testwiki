@@ -1,5 +1,9 @@
 ## Discussion controller
 
+
+## Contents:
+[GET searchClassDiscussions](#GET searchClassDiscussions:  )
+
 ### GET searchClassDiscussions:  
 Get discussions by class and publication ID
 
