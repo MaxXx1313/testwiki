@@ -46,7 +46,8 @@ Get discussions for specified classes (see getClassDiscussion, but for many clas
 
 
 ### POST persistDiscussionMessage:
-Client part:  
+Client part: 
+
 1. Insert data to user RW
 1. Set informed, reviewed params (mb skip, assume that all author messages are reviewed)
   1. get activity by class
@@ -54,21 +55,27 @@ Client part:
 1. Update activity (see updateUserDiscussionMessagesState 4.)
 1. Return ‘Ok’ (important!)
 
-Agent part:  
+
+Agent part: 
+
 1. Get course DB by classId
 1. If DB does not exist - reject Promise, otherwise - get doc from course DB
 1. Update values and upsert doc in course DB
 1. Remove doc from userRW DB
 
+![persistClassDiscussion](discussion/Discussion_POST_persistDiscussionMessage.png)
 
 
 ### POST persistClassDiscussion:
 Client part:  
+
 1. Convert data
 1. Insert into user RW
 1. Return result
 
+
 Agent part:  
+
 1. Get course DB by classId
 1. If DB does not exist - reject Promise, otherwise - get doc from course DB
 1. Update values and upsert doc in course DB
