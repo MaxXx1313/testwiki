@@ -14,7 +14,7 @@ Get discussions by class and publication ID
 
 
 See also: 
-[query operations schema](../dao/common/byIds.png) operations
+[byId/byIds/byPrefix](../dao/common/byIds.png) operations
 
 ![searchClassDiscussions](discussion/Discussion_GET_searchClassDiscussions.png)
 ![Discussion.getByPrefix](discussion/Discussion.getByPrefix.png)
