@@ -2,12 +2,13 @@
 
 
 ## Contents:
-[GET searchClassDiscussions](#get-searchclassdiscussions)
-[GET getClassDiscussion](#get-getclassdiscussion)
-[POST updateUserDiscussionMessagesState](#get-getclassdiscussion)
-[POST persistDiscussionMessage](#post-persistdiscussionmessage)
-[POST persistClassDiscussion](#post-persistclassdiscussion)
-[See also](#see-also)
+
+* [GET searchClassDiscussions](#get-searchclassdiscussions)
+* [GET getClassDiscussion](#get-getclassdiscussion)
+* [POST updateUserDiscussionMessagesState](#get-getclassdiscussion)
+* [POST persistDiscussionMessage](#post-persistdiscussionmessage)
+* [POST persistClassDiscussion](#post-persistclassdiscussion)
+* [See also](#see-also)
 
 ### GET searchClassDiscussions:  
 Get discussions by class and publication ID
