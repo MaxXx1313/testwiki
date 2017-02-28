@@ -1,0 +1,37 @@
+@startuml
+
+
+:GET Discussion getClassDiscussion<
+:ids/
+
+partition Discussion.getDiscussions {
+
+  while (for each)
+
+    :Discussion.searchByClass |
+
+  endwhile
+}
+stop
+
+@enduml
+
+
+
+
+[<receiver>GET getClassDiscussion]->[<start>s]
+  [<start>s]->[Discussion.getDiscussions|
+    [<start>s]->[<input>ids]
+    [ids]->[<choice>for each]
+    [for each]->[Discussion.searchByClass]
+    [Discussion.searchByClass|
+       [<start>s]
+       [s]->[Discussion.getByPrefix]
+       [s]->[Discussion.getDiscussionActivity]
+       [Discussion.getByPrefix]->[<state>convert]
+       [Discussion.getDiscussionActivity]->[<state>convert]
+       [convert]->[<end>e]
+    ]->[for each]
+    [for each]->[<end>e]
+  ]
+  [Discussion.getDiscussions]->[<end>e]
