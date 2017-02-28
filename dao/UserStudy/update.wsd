@@ -11,7 +11,6 @@ partition UserStudy.update {
 
   partition UserStudy._saveDoc {
     :DB.userRW().put('activity');
-    note right: can be stacked in concurrency operations
   }
 }
 end
