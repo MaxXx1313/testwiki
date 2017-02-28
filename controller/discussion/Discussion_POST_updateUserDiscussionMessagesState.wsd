@@ -1,0 +1,32 @@
+@startuml
+
+
+:POST updateUserDiscussionMessagesState<
+
+partition Discussion.updateMessagesState {
+
+  :Discussions.getDiscussions |
+  while (for each)
+    :Discussions.getDiscussionActivity |
+    :Discussions.updateDiscussionActivity |
+  endwhile
+}
+stop
+
+@enduml
+
+
+
+
+
+
+[<receiver>POST updateUserDiscussionMessagesState]->[<start>s]
+[s]->[Discussion.updateMessagesState|
+  [<start>s]->[Discussions.getDiscussions]
+  [Discussions.getDiscussions]->[<choice>loop]
+  [loop]->[<end>e]
+  [loop]->[Discussions.getDiscussionActivity]
+  [Discussions.getDiscussionActivity]->[Discussion.updateDiscussionActivity]
+  [Discussion.updateDiscussionActivity]->[loop]
+]
+[Discussion.updateMessagesState]->[<end>e]

@@ -1,0 +1,13 @@
+@startuml
+
+start
+partition Discussion.updateDiscussionActivity {
+
+    :UserStudy.getPublicationSummary|
+    :UserStudy.update |
+}
+end
+
+@enduml
+
+
