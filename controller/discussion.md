@@ -79,4 +79,5 @@ Agent part:
 ![Discussion.updateDiscussionActivity](../dao/Discussion/Discussion.updateDiscussionActivity.png)
 
 
-![UserStudy.getPublicationSummary](../dao/UserStudy/UserStudy.getPublicationSummary.png)
+![UserStudy.getPublicationSummary](../dao/UserStudy/getPublicationSummary.png)
+![UserStudy.update](../dao/UserStudy/update.png)

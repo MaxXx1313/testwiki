@@ -1,0 +1,19 @@
+
+@startuml
+
+start
+partition UserStudy.update {
+
+  partition UserStudy._getDocIntermediate {
+    :DB.userRW().get('activity');
+    note right: can be cached in concurrency operations
+  }
+
+  partition UserStudy._saveDoc {
+    :DB.userRW().put('activity');
+    note right: can be stacked in concurrency operations
+  }
+}
+end
+
+@enduml

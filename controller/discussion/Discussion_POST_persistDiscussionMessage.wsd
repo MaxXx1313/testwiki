@@ -9,11 +9,11 @@ partition Discussion.persistMessage {
 
   partition Discussion.updateMessageState {
       partition Discussion.getDiscussionActivity {
-        :UserStudy.getPublicationSummary |
+        :UserStudy.getPublicationSummary ;
       }
       partition :Discussion.updateDiscussionActivity {
-        :UserStudy.getPublicationSummary|
-        :UserStudy.update |
+        :UserStudy.getPublicationSummary;
+        :UserStudy.update ;
       }
   }
 }
