@@ -1,0 +1,29 @@
+@startuml
+
+|Client|
+
+:POST persistDiscussionMessage<
+
+partition Discussion.persistMessage {
+  :DB.userRW().put;
+
+  partition Discussion.updateMessageState {
+      partition Discussion.getDiscussionActivity {
+        :UserStudy.getPublicationSummary |
+      }
+      partition :Discussion.updateDiscussionActivity {
+        :UserStudy.getPublicationSummary|
+        :UserStudy.update |
+      }
+  }
+}
+
+|#AntiqueWhite|Agent|
+ #eebb33:get course ]
+ #eebb33:update course record ]
+ #eebb33:remove doc from userRW ]
+stop
+
+@enduml
+
+
