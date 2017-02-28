@@ -1,12 +1,20 @@
 @startuml
 
+|Client|
 
-:POST updateUserDiscussionMessagesState<
+:POST persistClassDiscussion<
 
-partition Discussion.updateMessagesState {
+partition Discussion.persistDiscussion {
 
-
+  partition Discussion.createDiscussion {
+      :DB.userRW().put;
+  }
 }
+
+|#AntiqueWhite|Agent|
+ #eebb33:get course ]
+ #eebb33:update course record ]
+ #eebb33:remove doc from userRW ]
 stop
 
 @enduml
