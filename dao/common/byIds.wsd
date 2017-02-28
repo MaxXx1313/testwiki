@@ -1,0 +1,37 @@
+@startuml
+
+
+
+partition DB.query.byIds {
+
+    note left: this schema covers both __byId/byIds__ and __byPrefix__ methods
+
+    (*) --> getOffline
+    note left: use getAllByPrefix or getByKeys
+
+    --> if "empty?" then
+
+            --> [Y] getOnline
+            note left: use Pouch.allDocs or Pouch.query
+
+        else
+            -> if "forceOnline?"
+                --> [Y] getOnline
+            else
+                --> if "cache expired?"
+
+                        -left[dotted]-> [Y] getOnline
+                    else
+                        -->(*)
+                    endif
+            endif
+        endif
+
+    getOnline --> updateCacheData
+    note left: db.bulkDocs
+
+    -> (*)
+
+
+}
+@enduml
