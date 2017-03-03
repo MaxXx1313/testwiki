@@ -39,16 +39,18 @@
 
 ## Publication.GET.getStudyGuideInfo
 
-See [getBookInfo](#publication-get-getbookinfo)
+See [getBookInfo](#publicationgetgetbookinfo)
 
 
 ## Publication.GET.search
 
 GET search:
+
 1. If collectionId is provided - get collection and return items
 2. Get my books
 3. Apply filter
 4. Sort, slice
+
 
 ![Publication.getById](../diagrams/Publication.getById.png)
 
