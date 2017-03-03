@@ -1,12 +1,12 @@
 ## Contents
 
-* [Publication.GET.details](#publication-get-details)
-* [Publication.GET.getBookInfo](#publication-get-getbookinfo)
-* [Publication.GET.getCollectionInfo](#publication-get-getcollectioninfo)
-* [Publication.GET.getStudyGuideInfo](#publication-get-getstudyguideinfo)
-* [Publication.GET.search](#publication-get-search)
-* [Publication.POST.persistCurrentStudyGuide](#publication-post-persistcurrentstudyguide)
-* [Publication.POST.persistDefaultStudyGuide](#publication-post-persistdefaultstudyguide)
+* [Publication.GET.details](#publicationgetdetails)
+* [Publication.GET.getBookInfo](#publicationgetgetbookinfo)
+* [Publication.GET.getCollectionInfo](#publicationgetgetcollectioninfo)
+* [Publication.GET.getStudyGuideInfo](#publicationgetgetstudyguideinfo)
+* [Publication.GET.search](#publicationgetsearch)
+* [Publication.POST.persistCurrentStudyGuide](#publicationpostpersistcurrentstudyguide)
+* [Publication.POST.persistDefaultStudyGuide](#publicationpostpersistdefaultstudyguide)
 
 
 ## Publication.GET.details
