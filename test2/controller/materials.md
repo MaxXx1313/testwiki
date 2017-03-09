@@ -10,6 +10,7 @@
 ## GET annotations
 
 Get user materials
+
 1. get publication ID
   1. ~~get publication by ID~~
   1. if StudyGuide - return book ID that is based on that StudyGuide, otherwise - book ID
