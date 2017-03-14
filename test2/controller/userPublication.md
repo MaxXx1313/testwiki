@@ -8,7 +8,6 @@
 
 ## GET getRecentBooks
 
-
 1. get recent books
   1. get activity doc, sort keys by lastOpenedAt value, slice
   1. get publications by IDs
@@ -29,7 +28,6 @@
 
 ## POST update
 
-
 Client:
 
 1. Update activity
@@ -41,5 +39,3 @@ Agent:
 1. Handle activity change
 
 ![schema](../diagrams/UserPublication.POST.update.png)  
-
-

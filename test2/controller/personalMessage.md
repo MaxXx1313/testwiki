@@ -23,5 +23,3 @@
 1. Agent handler?
 
 ![schema](../diagrams/PersonalMessage.POST.update.png)  
-
-

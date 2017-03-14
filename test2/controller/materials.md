@@ -51,5 +51,3 @@ Set tags and annotations (user only)
 ```
 
 ![schema](../diagrams/Materials.POST.update.png)  
-
-

@@ -1,13 +1,8 @@
 # Message
 
-## Contents
-
-* [persist](#persist)
 
 
 ## persist
 
- TODO: link DB.userRW().createTask
+TODO: link DB.userRW().createTask
 ![schema](../diagrams/Message.persist.png)  
-
-

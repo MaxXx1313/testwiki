@@ -1,12 +1,8 @@
 # StudyCourses
 
-## Contents
-
-* [GET get](#get-get)
 
 
 ## GET get
-
 
 1. Get doc from public DB
 2. Expand nested items
@@ -21,5 +17,3 @@
 
 
 ![schema](../diagrams/StudyCourses.GET.get.png)  
-
-

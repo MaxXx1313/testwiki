@@ -8,7 +8,6 @@
 
 ## GET /
 
-
 1. Get doc _local/settings
 2. convert
 
@@ -17,10 +16,7 @@
 
 ## POST /
 
-
 1. Get doc _local/settings
 2. convert
 
 ![schema](../diagrams/Settings.POST.saveSettings.png)  
-
-

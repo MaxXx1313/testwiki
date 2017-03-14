@@ -62,5 +62,3 @@ Agent part:
 4. Remove doc from userRW DB
 
 ![schema](../diagrams/Discussion.POST.persistDiscussionMessage.png)  
-
-

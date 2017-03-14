@@ -1,8 +1,5 @@
 # Reports
 
-## Contents
-
-* [POST /](#post--)
 
 
 ## POST /
@@ -20,5 +17,3 @@ Agent:
 4. Send request to app
 
 ![schema](../diagrams/Reports.POST.saveReport.png)  
-
-

@@ -1,8 +1,5 @@
 # Notification
 
-## Contents
-
-* [POST usernotification](#post-usernotification)
 
 
 ## POST usernotification
@@ -23,5 +20,3 @@
 2. Collect all results
 
 ![schema](../diagrams/Notification.POST.usernotification.png)  
-
-

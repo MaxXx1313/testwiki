@@ -1,26 +1,21 @@
 # Controllers
 
-## Contents
-
-* [Controllers](#controllers)
 
 
 ## Controllers
 
-* [Discussion](controller/discussion.md)
-* [ManageTests](controller/manageTests.md)
-* [Publications](controller/publications.md)
-* [Materials](controller/materials.md)
-* [Notification](controller/notification.md)
-* [PersonalMessage](controller/personalMessage.md)
-* [Reports](controller/reports.md)
-* [Settings](controller/settings.md)
-* [StudyCourses/Syllabus](controller/studyCourses.md)
-* [Flashcards](controller/studyFlashcards.md)
-* [UserPublication](controller/userPublication.md)
-* [Users](controller/users.md)
-* [UserStudy](controller/userStudy.md)
-* [Vocabulary](controller/vocabulary.md)
-
-
+* [Discussion](controller/Discussion.md)
+* [ManageTests](controller/ManageTests.md)
+* [Publications](controller/Publications.md)
+* [Materials](controller/Materials.md)
+* [Notification](controller/Notification.md)
+* [PersonalMessage](controller/PersonalMessage.md)
+* [Reports](controller/Reports.md)
+* [Settings](controller/Settings.md)
+* [StudyCourses/Syllabus](controller/StudyCourses.md)
+* [Flashcards](controller/StudyFlashcards.md)
+* [UserPublication](controller/UserPublication.md)
+* [Users](controller/Users.md)
+* [UserStudy](controller/UserStudy.md)
+* [Vocabulary](controller/Vocabulary.md)
 

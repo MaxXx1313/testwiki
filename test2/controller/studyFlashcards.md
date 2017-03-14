@@ -13,14 +13,12 @@
 
 ## GET all
 
-
 1. Get flashcards (‘flashcards’)
 
 ![schema](../diagrams/StudyFlashcards.GET.getFlashcards.png)  
 
 
 ## GET searchAssignedFlashcards
-
 
 1. Get all flashcards (‘flashcards’)
 2. Initiate study
@@ -33,7 +31,6 @@
 
 ## GET searchStudies
 
-
 1. get flashcards doc from user RW
 1. get .values
 1. filter by time
@@ -42,7 +39,6 @@
 
 
 ## POST activate
-
 
 1. Get publication by ID //TODO use raw call instead
 1. Find test info
@@ -55,7 +51,6 @@
 
 
 ## POST add
-
 
 1. Get all flashcards
 1. Filter by term name
@@ -70,7 +65,6 @@
 
 ## POST initiate
 
-
 1. Initiate study
   1. get questions by IDs from query DB (online call)
   1. get all flashcards
@@ -79,7 +73,6 @@
 
 
 ## POST update
-
 
 1. Get study by ID
   1. ~~get all flashcards~~
@@ -93,5 +86,3 @@
 
 
 ![schema](../diagrams/StudyFlashcards.POST.update.png)  
-
-
