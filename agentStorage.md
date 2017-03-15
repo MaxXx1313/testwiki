@@ -12,21 +12,21 @@
 
 See [onlineRequest](#onlineRequest)
 
-![schema](../diagrams/CustomPouch.byId.png)  
+![schema](diagrams/CustomPouch.byId.png)  
 
 
 ## byIds
 
 See [onlineRequest](#onlineRequest)
 
-![schema](../diagrams/CustomPouch.byIds.png)  
+![schema](diagrams/CustomPouch.byIds.png)  
 
 
 ## byPrefix
 
 See [onlineRequest](#onlineRequest)
 
-![schema](../diagrams/CustomPouch.byPrefix.png)  
+![schema](diagrams/CustomPouch.byPrefix.png)  
 
 
 ## onlineRequest
@@ -38,11 +38,11 @@ This chapter describe logic of such methods as
 
 Offline request:
 
-![CustomPouch.__getOffline](../diagrams/CustomPouch.__getOffline.png)
+![CustomPouch.__getOffline](diagrams/CustomPouch.__getOffline.png)
 
 Online request:
 
-![CustomPouch.__getOnline](../diagrams/CustomPouch.__getOnline.png)
+![CustomPouch.__getOnline](diagrams/CustomPouch.__getOnline.png)
 
 
-![schema](../diagrams/CustomPouch.onlineRequest.png)  
+![schema](diagrams/CustomPouch.onlineRequest.png)  
