@@ -9,7 +9,7 @@
 
 ## About
 
-See also [User.getCurrentUser](../dao/User.md#getCurrentUser)
+See also [User.getCurrentUser](../dao/User.md#getcurrentuser)
 
 
 ## GET profile

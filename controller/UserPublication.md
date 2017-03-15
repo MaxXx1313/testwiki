@@ -25,9 +25,9 @@
 
 See also:
 
-* [Publication.getByIds](../dao/Publication.md#getByIds)
-* [UserStudy._getAll](../dao/UserStudy.md#_getAll)
-* [User.getCurrentUser](../dao/User.md#getCurrentUser)
+* [Publication.getByIds](../dao/Publication.md#getbyids)
+* [UserStudy._getAll](../dao/UserStudy.md#_getall)
+* [User.getCurrentUser](../dao/User.md#getcurrentuser)
 
 
 ![schema](../diagrams/UserPublication.getRecentItems.png)  

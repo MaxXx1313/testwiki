@@ -46,7 +46,7 @@ Agent:
 
 See also:
 
-* [Publication.getByIds](../dao/Publication.md#getByIds)
+* [Publication.getByIds](../dao/Publication.md#getbyids)
 * [StudyCourse.get](../dao/StudyCourse.md#get)
 
 ![schema](../diagrams/UserStudy.POST.initiate.png)  
@@ -63,7 +63,7 @@ See also:
 
 See also:
 
-* [Publication.getById](../dao/Publication.md#getById)
+* [Publication.getById](../dao/Publication.md#getbyid)
 
 ![schema](../diagrams/UserStudy.POST.persistEssay.png)  
 
@@ -107,7 +107,7 @@ See also:
 
 See also:
 
-* [User.getCurrentUser](../dao/User.md#getCurrentUser)
+* [User.getCurrentUser](../dao/User.md#getcurrentuser)
 
 
 ![schema](../diagrams/UserStudy.POST.searchuserstudy.png)  

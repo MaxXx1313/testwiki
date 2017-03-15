@@ -10,21 +10,21 @@
 
 ## byId
 
-See [onlineRequest](#onlineRequest)
+See [onlineRequest](#onlinerequest)
 
 ![schema](diagrams/CustomPouch.byId.png)  
 
 
 ## byIds
 
-See [onlineRequest](#onlineRequest)
+See [onlineRequest](#onlinerequest)
 
 ![schema](diagrams/CustomPouch.byIds.png)  
 
 
 ## byPrefix
 
-See [onlineRequest](#onlineRequest)
+See [onlineRequest](#onlinerequest)
 
 ![schema](diagrams/CustomPouch.byPrefix.png)  
 
@@ -32,9 +32,9 @@ See [onlineRequest](#onlineRequest)
 ## onlineRequest
 
 This chapter describe logic of such methods as
-[DB.query.byId](#byId)
-[DB.query.byIds](#byIds)
-[DB.query.byPrefix](#byPrefix)
+[DB.query.byId](#byid)
+[DB.query.byIds](#byids)
+[DB.query.byPrefix](#byprefix)
 
 Offline request:
 
