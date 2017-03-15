@@ -12,3 +12,10 @@ It's expected that you have detailed schema of the complex operation linked to t
 ## Files
 
 [Client controllers](controllers.md)  
+
+
+## Dao
+
+[Query requests](agentStorage.md#onlineRequest)  
+
+
