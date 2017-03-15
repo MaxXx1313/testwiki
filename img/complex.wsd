@@ -1,6 +1,0 @@
-@startuml
-
-: this block has complex structure
- and should be described additionally |
-
-@enduml
