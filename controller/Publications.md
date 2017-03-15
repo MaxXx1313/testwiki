@@ -3,10 +3,10 @@
 ## Contents
 
 * [About](#about)
-* [controller.publication GET getStudyGuideInfo](#controllerpublication-get-getstudyguideinfo)
 * [GET details](#get-details)
 * [GET getBookInfo](#get-getbookinfo)
 * [GET getCollectionInfo](#get-getcollectioninfo)
+* [GET getStudyGuideInfo](#get-getstudyguideinfo)
 * [GET search](#get-search)
 * [POST persistCurrentStudyGuide](#post-persistcurrentstudyguide)
 * [POST persistDefaultStudyGuide](#post-persistdefaultstudyguide)
@@ -20,11 +20,6 @@ These items are related to mostly all endpoints:
 * [Publication.getByIds](../dao/Publication.md#getbyids)
 * [Publication.getByOptions](../dao/Publication.md#getbyoptions)
 
-
-
-## controller.publication GET getStudyGuideInfo
-
-See [getBookInfo](#publicationgetgetbookinfo)
 
 
 ## GET details
@@ -52,6 +47,11 @@ See [getBookInfo](#publicationgetgetbookinfo)
 2. convert
 
 ![schema](../diagrams/Publication.GET.getCollectionInfo.png)  
+
+
+## GET getStudyGuideInfo
+
+See [getBookInfo](#publicationgetgetbookinfo)
 
 
 ## GET search
