@@ -2,31 +2,14 @@
 
 ## Contents
 
-* [controller.userStudy POST persistprogress](#controlleruserstudy-post-persistprogress)
 * [GET activityByItem](#get-activitybyitem)
 * [POST initiate](#post-initiate)
 * [POST persistEssay](#post-persistessay)
 * [POST persistParagraphSummary](#post-persistparagraphsummary)
+* [POST persistprogress](#post-persistprogress)
 * [POST persistTest](#post-persisttest)
 * [POST readingprogresstracking](#post-readingprogresstracking)
 * [POST searchuserstudy](#post-searchuserstudy)
-
-
-## controller.userStudy POST persistprogress
-
-Client:
-
-1. Save activity data
-1. If book reading completed - add to my books
-
-Agent:
-
-1. Add activity to allActivity doc in user query DB
-1. Iterate over activity for classes, get course DB (loop)
-1. If .readingDuration wasn’t changed - skip
-1. Clean unused info and leave progress for last 7 days only
-
-![schema](../diagrams/UserStudy.POST.persistprogress.png)  
 
 
 ## GET activityByItem
@@ -74,6 +57,23 @@ See also:
 1. ~~Handle activity change~~
 
 ![schema](../diagrams/UserStudy.POST.persistParagraphSummary.png)  
+
+
+## POST persistprogress
+
+Client:
+
+1. Save activity data
+1. If book reading completed - add to my books
+
+Agent:
+
+1. Add activity to allActivity doc in user query DB
+1. Iterate over activity for classes, get course DB (loop)
+1. If .readingDuration wasn’t changed - skip
+1. Clean unused info and leave progress for last 7 days only
+
+![schema](../diagrams/UserStudy.POST.persistprogress.png)  
 
 
 ## POST persistTest

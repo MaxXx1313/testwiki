@@ -10,7 +10,7 @@
 
 ## About
 
-See also [Publication.getById](../dao/Publication#getbyid) and [Publication.getByIds](../dao/Publication#getbyids)
+See also [ublication.getById](../Publication.md#getbyid) and [ublication.getByIds](../Publication.md#getbyids)
 
 
 ## GET annotations
